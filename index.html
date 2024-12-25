@@ -1,133 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatório Mensal dos Exames - 15/04/1960</title>
     <style>
-        body {
-            background-color: black;
-            color: orange;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .container {
-            border: 2px solid orange;
-            padding: 20px;
-            margin: 20px;
-            position: relative;
-        }
-        .header {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 24px;
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-        .date {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 14px;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            color: orange;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section-title {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        .section-content {
-            font-size: 16px;
-        }
-        .important {
-            color: red;
-        }
+      @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+      body {
+        background-color: black;
+        color: orange;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      .container {
+        border: 2px solid orange;
+        padding: 20px;
+        margin: 20px;
+        position: relative;
+      }
+
+      .header {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      .date {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: orange;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      .section-title {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .section-content {
+        font-size: 16px;
+      }
+
+      .important {
+        color: red;
+      }
+
+      .section-content em {
+        font-style: italic;
+      }
+
+      .section-content strong {
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">RELATÓRIO MENSAL DOS EXAMES</div>
-        <div class="date">15/04/1960</div>
-        <div class="section">
-            <div class="section-title">Informações do Assunto:</div>
-            <div class="section-content">
-                Nome - Robert Smith<br>
-                Data de Nascimento - 26/05/1953<br>
-                Sexo - Masculino<br>
-                12 anos<br>
-                Altura - 1,51<br>
-                Peso - 40kg<br>
-                Ala B<br>
-                Quarto 207<br>
-                Porcentagem de Importância: <span class="important">100%</span>
-            </div>
+      <div class="header">RELATÓRIO MENSAL DOS EXAMES</div>
+      <div class="date">15/04/1960</div>
+      <div class="section">
+        <div class="section-title">Informações do Assunto:</div>
+        <div class="section-content"> Nome - Robert Smith <br> Data de Nascimento - 26/05/1953 <br> Sexo - Masculino <br> 12 anos <br> Altura - 1,51 <br> Peso - 40kg <br> Ala B <br> Quarto 207 <br> Porcentagem de Importância: <span class="important">100%</span>
         </div>
-        <div class="section">
-            <div class="section-title">Notas do Assunto:</div>
-            <div class="section-content">
-                Última atualização registrada em 13/08/1959 -<br>
-                Após o dia 13 de Agosto de 1959, todos os experimentos realizados no protótipo foram pausados para a recuperação do sujeito. Todas as notas anteriores já feitas serão queimadas a fim de segurança nacional. Quaisquer tentativas de afeição ao boneco serão duramente punidas.
-            </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Notas do Assunto:</div>
+        <div class="section-content"> Última atualização registrada em 13/08/1959 - <br> Após o dia 13 de Agosto de 1959, todos os experimentos realizados no protótipo foram pausados para a recuperação do sujeito. Todas as notas anteriores já feitas serão queimadas a fim de segurança nacional. <strong>Quaisquer tentativas de afeição ao boneco serão duramente punidas.</strong>
         </div>
-        <div class="section">
-            <div class="section-title">Resultados Físicos:</div>
-            <div class="section-content">
-                - IMC: 17,5<br>
-                - Frequência Cardíaca (FC): 78<br>
-                - Pressão Sistólica (PS): 110<br>
-                - Pressão Diastólica (PD): 70<br>
-                - Temperatura (TMP): 36,8°C<br>
-                - Olhos: Normal<br>
-                - Ouvidos: Normal<br>
-                - Dentes: Normal<br>
-                - Genitais: Normal<br>
-                - Tolerância à Dor (01-10): 6
-            </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Resultados Físicos:</div>
+        <div class="section-content">
+          <ul>
+            <li>IMC: 17,5</li>
+            <li>Frequência Cardíaca (FC): 78</li>
+            <li>Pressão Sistólica (PS): 110</li>
+            <li>Pressão Diastólica (PD): 70</li>
+            <li>Temperatura (TMP): 36,8°C</li>
+            <li>Olhos: Normal</li>
+            <li>Ouvidos: Normal</li>
+            <li>Dentes: Normal</li>
+            <li>Genitais: Normal</li>
+            <li>Tolerância à Dor (01-10): 6</li>
+          </ul>
         </div>
-        <div class="section">
-            <div class="section-title">Resultados a Exposição (Manuscritos de Al-Azif):</div>
-            <div class="section-content">
-                - Frequência Cardíaca (FC): 140<br>
-                - Tempo de Reação (ms): 0,8<br>
-                - Força: N/A<br>
-                - Alteração Perceptiva Localizada: 312<br>
-                - Decaimento da Alteração Perceptiva: 24<br>
-                - Sensibilidade (01-10): <br>
-                - Controle (01-10): 4<br>
-                Durante a exposição ao item, o sujeito apresentou reações intensas e variações de controle, com um aumento significativo nos parâmetros de distúrbio local. O objeto parece ter impactado significativamente sua percepção e controle emocional, embora, de forma impressionante, ele tenha conseguido manter a lucidez. No entanto, a intensidade da reação pode ter um efeito residual que deve ser monitorado.
-            </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Resultados a Exposição (Manuscritos de Al-Azif):</div>
+        <div class="section-content">
+          <ul>
+            <li>Frequência Cardíaca (FC): 140</li>
+            <li>Tempo de Reação (ms): 0,8</li>
+            <li>Força: N/A</li>
+            <li>Alteração Perceptiva Localizada: 312</li>
+            <li>Decaimento da Alteração Perceptiva: 24</li>
+            <li>Sensibilidade (01-10): </li>
+            <li>Controle (01-10): 4</li>
+          </ul>
+          <em>Durante a exposição ao item, o sujeito apresentou reações intensas e variações de controle, com um aumento significativo nos parâmetros de distúrbio local. O objeto parece ter impactado significativamente sua percepção e controle emocional, embora, de forma impressionante, ele tenha conseguido manter a lucidez. No entanto, a intensidade da reação pode ter um efeito residual que deve ser monitorado.</em>
         </div>
-        <div class="section">
-            <div class="section-title">Notas Físicas:</div>
-            <div class="section-content">
-                Última Atualização: 03/12/1965<br>
-                - Os seguintes sintomas devem ser ignorados caso notados em exames futuros: alucinações, delírios, mudanças de humor, impulsitividade, insônia e isolamento social, agressões contra o pesquisador e a si mesmo;<br>
-                - Quaisquer tentativas de atentado contra a própria vida devem ser impedidas imediatamente.
-            </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Notas Físicas:</div>
+        <div class="section-content"> Última Atualização: 03/12/1965 <br>
+          <ul>
+            <li>
+              <em>Os seguintes sintomas devem ser ignorados caso notados em exames futuros: alucinações, delírios, mudanças de humor, impulsitividade, insônia e isolamento social, agressões contra o pesquisador e a si mesmo;</em>
+            </li>
+            <li>
+              <em>Quaisquer tentativas de atentado contra a própria vida devem ser impedidas imediatamente.</em>
+            </li>
+          </ul>
         </div>
-        <div class="section">
-            <div class="section-title">Resultados dos Testes:</div>
-            <div class="section-content">
-                - Teste de Resposta Física: 100 APROVADO<br>
-                - Teste de Resposta Emocional: 100 APROVADO<br>
-                - Teste de Controle Físico: 67 APROVADO<br>
-                - Teste de Controle Emocional: 58 APROVADO<br>
-                - Teste de Exposição ao Item: 95 APROVADO<br>
-                - Teste de Supressão ao Efeito do Item: 50 APROVADO<br>
-                - Teste de Resposta a Ameaça Menor: 100 APROVADO<br>
-                - Teste de Eliminação de Ameaça Menor: 100 APROVADO<br>
-                - Teste de Resposta a Ameaça de Vida: 90 APROVADO<br>
-                - Teste de Eliminação de Ameaça de Vida: 80 APROVADO
-            </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Resultados dos Testes:</div>
+        <div class="section-content">
+          <ul>
+            <li>Teste de Resposta Física: 100 APROVADO</li>
+            <li>Teste de Resposta Emocional: 100 APROVADO</li>
+            <li>Teste de Controle Físico: 67 APROVADO</li>
+            <li>Teste de Controle Emocional: 58 APROVADO</li>
+            <li>Teste de Exposição ao Item: 95 APROVADO</li>
+            <li>Teste de Supressão ao Efeito do Item: 50 APROVADO</li>
+            <li>Teste de Resposta a Ameaça Menor: 100 APROVADO</li>
+            <li>Teste de Eliminação de Ameaça Menor: 100 APROVADO</li>
+            <li>Teste de Resposta a Ameaça de Vida: 90 APROVADO</li>
+            <li>Teste de Eliminação de Ameaça de Vida: 80 APROVADO</li>
+          </ul>
         </div>
-        <div class="section">
-            <div class="section-title">Notas ao Teste:</div>
-            <div class="section-content">
-                Após anos, finalmente encontramos o portador da sacra semente. É com grande satisfação que anuncio que nossos mais distantes sonhos se materializam diante de nós. Robert necessita de um breve descanso após os intensos testes, mas, pelos resultados alcançados, nossa única dificuldade será encontrar a progenitora ideal para o renascimento do Cristo Rei. A escolha da mulher certa para gerar o novo Messias exige mais do que a 'ciência' que conhecemos atualmente. O que antes parecia pura utopia, hoje toma forma diante de nossos olhos, marcando o início de uma nova era para a humanidade. O Novo Éden nascerá, e o crepúsculo prateado nos guiará, protegendo nossas almas.
-            </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Notas ao Teste:</div>
+        <div class="section-content">
+          <em>Após anos, finalmente encontramos o portador da Semente Sacra. É com grande satisfação que anuncio que nossos mais distantes sonhos se materializam diante de nós. Robert necessita de um breve descanso após os intensos testes, mas, pelos resultados alcançados, nossa única dificuldade será encontrar a progenitora ideal para o renascimento do Cristo Rei. A escolha da mulher certa para gerar o novo Messias exige mais do que a 'ciência' que conhecemos atualmente. O que antes parecia pura utopia, hoje toma forma diante de nossos olhos, marcando o início de uma nova era para a humanidade. O Novo Éden nascerá, e o crepúsculo prateado nos guiará, protegendo nossas almas.</em>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
